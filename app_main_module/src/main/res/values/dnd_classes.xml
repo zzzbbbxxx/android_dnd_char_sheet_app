@@ -1,0 +1,16 @@
+<resources>
+    <string-array name="classes_names_list">
+        <item>Бард</item>
+        <item>Варвар</item>
+        <item>Воин</item>
+        <item>Волшебник</item>
+        <item>Друид</item>
+        <item>Жрец</item>
+        <item>Колдун</item>
+        <item>Монах</item>
+        <item>Паладин</item>
+        <item>Плут</item>
+        <item>Следопыт</item>
+        <item>Чародей</item>
+    </string-array>
+</resources>

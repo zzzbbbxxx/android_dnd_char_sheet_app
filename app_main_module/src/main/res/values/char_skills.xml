@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="st_text">Спасбросок</string>
+
+    <string name="alt">Атлетика</string>
+
+    <string name="acro">Акробатика</string>
+    <string name="hand">Ловкость рук</string>
+    <string name="hide">Скрытность</string>
+
+    <string name="magic">Магия</string>
+    <string name="history">История</string>
+    <string name="anal">Анализ</string>
+    <string name="nature">Природа</string>
+    <string name="religion">Религия</string>
+
+    <string name="animal">Дрессировка</string>
+    <string name="_some1">Проницательность</string>
+    <string name="medicine">Медицина</string>
+    <string name="_some2">Внимательность</string>
+    <string name="surv">Выживание</string>
+
+    <string name="lie">Обман</string>
+    <string name="_some3">Запугивание</string>
+    <string name="_some4">Выступление</string>
+    <string name="_some5">Убеждение</string>
+</resources>

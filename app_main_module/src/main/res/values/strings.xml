@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="char_name_textview">Имя Персонажа</string>
+    <string name="class_name_textview">Класс</string>
+    <string name="race_name_textview">Раса</string>
+    <string name="level_textview">Уровень</string>
+    <string name="exp_textview">Опыт</string>
+    <string name="to_next_level_textview">Следующий уровень</string>
+    <string name="____">____</string>
+
+    <string name="tab1">Информация о Персонаже</string>
+    <string name="tab2">Характеристики и Навыки</string>
+
+</resources>

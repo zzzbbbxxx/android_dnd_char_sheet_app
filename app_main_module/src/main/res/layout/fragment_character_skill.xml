@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersAFragmentCharSkill">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/Skill_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/str_block"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading_strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/str"
+                    android:textSize="@dimen/size_" />
+
+                <LinearLayout
+                    android:id="@+id/strength_value_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/strength_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_" />
+
+                    <TextView
+                        android:id="@+id/strength_mod_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/strength_skill_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/str_st_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/str_st_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/st_text" />
+
+                        <TextView
+                            android:id="@+id/str_st_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/str_athl_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/str_athl_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/alt" />
+
+                        <TextView
+                            android:id="@+id/str_athl_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dex_block"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:background="#27DA9090"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading_dexterity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/dex"
+                    android:textSize="@dimen/size_" />
+
+                <LinearLayout
+                    android:id="@+id/dex_value_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dexterity_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_" />
+
+                    <TextView
+                        android:id="@+id/dexterity_mod_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dex_skill_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/dex_st_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/dex_st_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/st_text" />
+
+                        <TextView
+                            android:id="@+id/dex_st_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dex_acr_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/dex_acr_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/acro" />
+
+                        <TextView
+                            android:id="@+id/dex_acr_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dex_sleigth_hand_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/dex_sl_hand_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/hand" />
+
+                        <TextView
+                            android:id="@+id/dex_sl_hand_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dex_stealth_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/dex_stealth_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/hide" />
+
+                        <TextView
+                            android:id="@+id/dex_stealth_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/con_block"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading_constitution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/con"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/con_value_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/const_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_" />
+
+                    <TextView
+                        android:id="@+id/const_mod_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/con_skill_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/con_st_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="5sp">
+
+                        <TextView
+                            android:id="@+id/con_st_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/st_text" />
+
+                        <TextView
+                            android:id="@+id/con_st_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/int_block"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="#27DA9090"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading_intelligence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/intel"
+                    android:textSize="@dimen/size_" />
+
+                <LinearLayout
+                    android:id="@+id/int_value_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/intelligence_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_" />
+
+                    <TextView
+                        android:id="@+id/intelligence_mod_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/int_skill_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5sp">
+
+                    <LinearLayout
+                        android:id="@+id/int_st_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/int_st_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/st_text" />
+
+                        <TextView
+                            android:id="@+id/int_st_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/int_acrana_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/int_arcana_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/magic" />
+
+                        <TextView
+                            android:id="@+id/int_arcana_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/int_hist_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/int_hist_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/history" />
+
+                        <TextView
+                            android:id="@+id/int_hist_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/int_investigation_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/int_invest_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/anal" />
+
+                        <TextView
+                            android:id="@+id/int_invest_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/int_nature_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/int_nature_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/nature" />
+
+                        <TextView
+                            android:id="@+id/int_nature_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/int_rel_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/int_rel_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/religion" />
+
+                        <TextView
+                            android:id="@+id/int_rel_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wis_block"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading_wisdom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/wis"
+                    android:textSize="@dimen/size_" />
+
+                <LinearLayout
+                    android:id="@+id/wisdom_value_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/editText_wisdom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_" />
+
+                    <TextView
+                        android:id="@+id/editText_wisdom_mod"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wis_skill_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/wis_st_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/wis_st_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/st_text" />
+
+                        <TextView
+                            android:id="@+id/wis_st_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wis_animal_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/wis_animal_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/animal" />
+
+                        <TextView
+                            android:id="@+id/wis_animal_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wis_insigth_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/wis_insigth_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/_some1" />
+
+                        <TextView
+                            android:id="@+id/wis_insigth_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wis_med_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/wis_med_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/medicine" />
+
+                        <TextView
+                            android:id="@+id/wis_med_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wis_persep_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/wis_pers_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/_some2" />
+
+                        <TextView
+                            android:id="@+id/wis_pers_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wis_surv_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/wis_surv_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/surv" />
+
+                        <TextView
+                            android:id="@+id/wis_surv_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cha_block"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:background="#27DA9090"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heading_charisma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:text="@string/cha"
+                    android:textSize="@dimen/size_" />
+
+                <LinearLayout
+                    android:id="@+id/cha_value_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cha_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textSize="@dimen/size_" />
+
+                    <TextView
+                        android:id="@+id/cha_mod_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:duplicateParentState="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cha_skill_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5sp">
+
+                    <LinearLayout
+                        android:id="@+id/cha_st_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cha_st_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/st_text" />
+
+                        <TextView
+                            android:id="@+id/cha_st_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cha_deception_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cha_deception_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/lie" />
+
+                        <TextView
+                            android:id="@+id/cha_deception_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cha_intimidation_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cha_intimid_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/_some3" />
+
+                        <TextView
+                            android:id="@+id/cha_intimid_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cha_perfomance_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cha_perfomance_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/_some4" />
+
+                        <TextView
+                            android:id="@+id/cha_perfomance_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cha_pers_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cha_pers_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            android:gravity="right|center_horizontal"
+                            android:text="@string/_some5" />
+
+                        <TextView
+                            android:id="@+id/cha_pers_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:gravity="center_horizontal|center_vertical" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

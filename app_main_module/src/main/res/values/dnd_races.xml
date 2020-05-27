@@ -1,0 +1,13 @@
+<resources>
+    <string-array name="races_names_list">
+        <item>Дварф</item>
+        <item>Эльф</item>
+        <item>Полурослик</item>
+        <item>Человек</item>
+        <item>Драконорожденный</item>
+        <item>Гном</item>
+        <item>Полуэльф</item>
+        <item>Полуорк</item>
+        <item>Тифлинг</item>
+    </string-array>
+</resources>

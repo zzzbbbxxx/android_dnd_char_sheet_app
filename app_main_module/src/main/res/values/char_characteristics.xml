@@ -1,0 +1,8 @@
+<resources>
+    <string name="str">STR</string>
+    <string name="dex">DEX</string>
+    <string name="con">CON</string>
+    <string name="intel">INT</string>
+    <string name="wis">WIS</string>
+    <string name="cha">CHA</string>
+</resources>
