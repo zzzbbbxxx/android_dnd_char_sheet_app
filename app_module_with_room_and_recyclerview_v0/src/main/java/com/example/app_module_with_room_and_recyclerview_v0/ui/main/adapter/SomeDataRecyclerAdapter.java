@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app_module_with_room_and_recyclerview_v0.R;
 import com.example.app_module_with_room_and_recyclerview_v0.db.model.DataModel;
+import com.example.app_module_with_room_and_recyclerview_v0.ui.fragments.recyclerview.FragmentWithRecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;

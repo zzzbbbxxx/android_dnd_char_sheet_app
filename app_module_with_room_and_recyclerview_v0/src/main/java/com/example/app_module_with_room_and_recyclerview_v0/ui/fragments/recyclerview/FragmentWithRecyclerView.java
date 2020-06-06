@@ -1,4 +1,4 @@
-package com.example.app_module_with_room_and_recyclerview_v0.ui.fragments.adapter;
+package com.example.app_module_with_room_and_recyclerview_v0.ui.fragments.recyclerview;
 
 
 import android.content.Context;
@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.app_module_with_room_and_recyclerview_v0.R;
+import com.example.app_module_with_room_and_recyclerview_v0.db.DatabaseHelper;
+import com.example.app_module_with_room_and_recyclerview_v0.ui.main.adapter.SomeDataRecyclerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;
@@ -21,7 +23,9 @@ import butterknife.Unbinder;
 
 import static androidx.recyclerview.widget.LinearLayoutManager.*;
 
-public class UsersFragmentWithRecyclerView extends androidx.fragment.app.Fragment {
+public class FragmentWithRecyclerView extends androidx.fragment.app.Fragment {
+
+    private DatabaseHelper databaseHelper;
 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
@@ -41,6 +45,7 @@ public class UsersFragmentWithRecyclerView extends androidx.fragment.app.Fragmen
 
         return rootView;
     }
+
 
 
 

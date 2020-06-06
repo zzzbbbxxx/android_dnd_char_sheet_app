@@ -3,4 +3,11 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="_color_for_background_component_1">#B6C98C</color>
+    <color name="_color_for_background_1">#F1FFD4</color>
+    <color name="_color_for_text_1">#FFFFFF</color>
+    <color name="green">#8DB600</color>
+
+
 </resources>
