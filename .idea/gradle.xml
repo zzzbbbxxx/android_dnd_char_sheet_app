@@ -10,7 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app_main_module" />
+            <option value="$PROJECT_DIR$/app_lesson_80" />
+            <option value="$PROJECT_DIR$/app_module_with_room_and_recyclerview_v0" />
+            <option value="$PROJECT_DIR$/app_old_module" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

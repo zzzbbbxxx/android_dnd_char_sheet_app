@@ -1,4 +1,4 @@
-package com.example.app_lesson_0;
+package com.example.app_module_with_room_and_recyclerview_v0.ui.fragments.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

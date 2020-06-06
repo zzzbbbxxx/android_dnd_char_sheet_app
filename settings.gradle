@@ -1,2 +1,4 @@
 rootProject.name='My Application'
-include ':app_main_module'
+include ':app_old_module'
+include ':app_lesson_80'
+include ':app_module_with_room_and_recyclerview_v0'
